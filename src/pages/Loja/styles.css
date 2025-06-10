@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: blue;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px 12px 32px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.Logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #ececec;
+}
+
+/* Main */
+main {
+    max-width: 950px;
+    margin: 32px auto 0 auto;
+    padding: 0 16px;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+/* Lançamento */
+.lancamento {
+    display: flex;
+    gap: 32px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.lancamento-img img {
+    width: 370px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.lancamento-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 220px;
+}
+
+.lancamento-info h2 {
+    font-size: 2em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.lancamento-info .preco {
+    color: #388e3c;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.comprar-btn {
+    display: inline-block;
+    background: #ff9800;
+    color: #fff;
+    padding: 10px 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.comprar-btn:hover {
+    background: #e65100;
+    color: #fffde7;
+}
+
+/* Ofertas */
+
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 100px 180px;
+    gap: 18px;
+    justify-content: center;
+}
+
+.ofertas {
+    max-width: 950px;
+    margin: 0 auto 32px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.ofertas h1 {
+    font-size: 1.6em;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ofertas > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.oferta {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    min-height: 320px;
+    transition: box-shadow 0.2s;
+}
+
+.oferta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.oferta h2 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.oferta p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.oferta a {
+    margin-top: auto;
+    background: #ff9800;
+    color: #fff;
+    padding: 7px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+.oferta a:hover {
+    background: #e65100;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .ofertas-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+    .oferta-grande, .oferta-pequena {
+        grid-column: span 1;
+        height: auto;
+    }
+}

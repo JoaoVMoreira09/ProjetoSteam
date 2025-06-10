@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +9,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <header>
-        <div class="Logo"></div>
-        <img src="/public/assets/images/steam-logo-4.png" height="50px">
+    <header>
+        <div class="Logo">
+            <img src="/public/assets/images/steam-logo-4.png" height="50" alt="Logo Steam">
+        </div>
         <nav>
-            <ul><a href="/src/pages/Loja/Loja.html">Loja</a></ul>
-            <ul><a href="/src/pages/Biblioteca/Biblioteca.html">Categorias</a></ul>
-            <ul><a href="/src/pages/Favoritos/Favoritos.html">Favoritos</a></ul>
+            <ul>
+                <li><a href="/src/pages/Loja/Loja.html">Loja</a></li>
+                <li><a href="/src/pages/Biblioteca/Biblioteca.html">Categorias</a></li>
+                <li><a href="/src/pages/Favoritos/Favoritos.html">Favoritos</a></li>
+            </ul>
         </nav>
     </header>
 
-    <h1>Meus Jogos</h1>
-    <div class="Favoritos">
-        <div class="Paladins">
-            <img src="/public/assets/images/Paladins_EGS_BaseGame_2560x1440_2560x1440-99d0ed45c628c499ad600a52217b4123.jpeg" height="500px">
+    <main>
+        <h1>Meus Jogos</h1>
+        <div class="favoritos-grid">
+            <div class="jogo-card">
+                <img src="/public/assets/images/Paladins_EGS_BaseGame_2560x1440_2560x1440-99d0ed45c628c499ad600a52217b4123.jpeg" alt="Paladins">
+                <h2>Paladins</h2>
+                <p>Conquistas 33/35 <br>Tempo Jogado: 1427 Horas</p>
+                <a href="https://store.steampowered.com/app/444090/Paladins/">Jogar</a>
+            </div>
+            <div class="jogo-card">
+                <img src="/public/assets/images/Browsing_Card-and-Asset_Gallery_1.jpeg" alt="Overwatch">
+                <h2>Overwatch</h2>
+                <p>Conquistas 89/164 <br>Tempo Jogado: 1742 Horas</p>
+                <a href="https://store.steampowered.com/app/389730/Overwatch/">Jogar</a>
+            </div>
+            <div class="jogo-card">
+                <img src="/public/assets/images/EGS_DeadbyDaylight_BehaviourInteractive_S1_2560x1440-a32581cf9948a9a2e24b2ff15c1577c7.jpeg" alt="Dead by Daylight">
+                <h2>Dead by Daylight</h2>
+                <p>Conquistas 164/269 <br>Tempo Jogado: 2122 Horas</p>
+                <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/">Jogar</a>
+            </div>
         </div>
-        <h2>Paladins</h2>
-        <p>Conquistas 33/35 <br>
-        Tempo Jogado: 1427 Horas</p>
-        <a href="https://store.steampowered.com/app/444090/Paladins/">Jogar</a>
-        <div class="Overwatch">
-            <img src="/public/assets/images/Browsing_Card-and-Asset_Gallery_1.jpeg" height="500px">
-        </div>
-        <h2>Overwatch</h2>
-        <p>Conquistas 89/164 <br>
-        Tempo Jogado: 1742 Horas</p>
-        <a href="https://store.steampowered.com/app/389730/Overwatch/">Jogar</a>
-        <div class="Dbd">
-            <img src="/public/assets/images/EGS_DeadbyDaylight_BehaviourInteractive_S1_2560x1440-a32581cf9948a9a2e24b2ff15c1577c7.jpeg" height="500px">
-        </div>
-        <h2>Dead by Daylight</h2>
-        <p>Conquistas 164/269 <br>
-        Tempo Jogado: 2122 Horas</p>
-        <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/">Jogar</a>
-    </div>
+    </main>
 </body>
 </html>

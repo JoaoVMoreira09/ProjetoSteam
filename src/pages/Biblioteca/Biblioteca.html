@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,95 +10,104 @@
 </head>
 <body>
     <header>
-        <div class="Logo"></div>
-        <img src="/public/assets/images/steam-logo-4.png" height="50px">
+        <div class="Logo">
+            <img src="/public/assets/images/steam-logo-4.png" height="50" alt="Logo Steam">
+        </div>
         <nav>
-            <ul><a href="/src/pages/Loja/Loja.html">Loja</a></ul>
-            <ul><a href="/src/pages/Biblioteca/Biblioteca.html">Categorias</a></ul>
-            <ul><a href="/src/pages/Favoritos/Favoritos.html">Favoritos</a></ul>
+            <ul>
+                <li><a href="/src/pages/Loja/Loja.html">Loja</a></li>
+                <li><a href="/src/pages/Biblioteca/Biblioteca.html">Categorias</a></li>
+                <li><a href="/src/pages/Favoritos/Favoritos.html">Favoritos</a></li>
+            </ul>
         </nav>
     </header>
-<main>
-    <ol class="Principais">
-        <h2>Principais Categorias de Jogos</h2>
-
-        <li>Aventura</li>
-        <li>Ação</li>
-        <li>RPG</li>
-        <li>Simulação</li>
-        <li>Estratégia</li>
-        <li>Esportes</li>
-        <li>Corrida</li>
-        <li>Tiro em primeira pessoa (FPS)</li>
-        <li>Tiro em terceira pessoa (TPS)</li>
-        <li>Plataforma</li>
-        <li>Puzzle</li>
-        <li>Jogos de Cartas e Tabuleiro</li>
-        <li>Jogos de Luta</li>
-        <li>Jogos de Música e Ritmo</li>
-        <li>Jogos de Sobrevivência</li>
-        <li>Visual Novel</li>
-        <li>Roguelike/Roguelite</li>
-    </ol>
-    <ol class="Modos de Jogo">
-        <h2> Categorias de Modos de Jogos</h2>
-
-            <li>Single-player</li>
-            <li>Multiplayer</li>
-            <li>Cooperativo (Co-op)</li>
-            <li>Competitivo</li>
-            <li>Offline</li>
-            <li>Online</li>
-            <li>MMORPG</li>
-            <li>MOBA</li>
-            <li>Battle Royale</li>
-    </ol>
-    <ol class="Temas e estilo">
-        <h2>Categorias por Tema e Estilo</h2>
-
-        <li>Indie</li>
-        <li>Retro</li>
-        <li>VR (Realidade Virtual)</li>
-        <li>Pixel Art</li>
-        <li>Jogos de terror psicológico</li>
-        <li>Anime/Mangá</li>
-        <li>Cyberpunk</li>
-        <li>Espacial/Exploração Espacial</li>
-        <li>Fantasia Medieval</li>
-        <li>Mitologia</li>
-        <li>Steampunk</li>
-        <li>Cybersporte (Esportes Eletrônicos)</li>
-        <li>Jogos de festa/multiplayer Local</li>
-        <li>Jogos de crianças</li>
-        <li>Jogos Educativos</li>
-    </ol>
-
-    <ol class="Genero">
-        <h2>Categorias por Gênero Narrativo</h2>
-
-       <li>Ficção Científica</li> 
-       <li>Terror</li>
-       <li>Drama</li>
-       <li>Fantasia</li>
-       <li>Comédia</li>
-       <li>Suspense</li>
-       <li>Histórico</li>
-       <li>mistério</li>
-       <li>Romance</li>
-    </ol>
-
-    <ol class="Plataformas">
-        <h2>Categorias por Plataforma</h2>
-
-        <li>PC</li>
-        <li>Console (PlayStation, Xbox, Nintendo)</li>
-        <li>Mobile (iOS, Android)</li>
-        <li>VR/AR</li>
-        <li>Jogos em Nuvem</li>
-        <li>Cross-platform</li>
-</main>
-<footer>
-    <a href="https://store.steampowered.com/">Baixar Steam</a>
-</footer>
+    <main>
+        <section class="categorias-grid">
+            <div class="categoria Principais">
+                <h2>Principais Categorias de Jogos</h2>
+                <ol>
+                    <li>Aventura</li>
+                    <li>Ação</li>
+                    <li>RPG</li>
+                    <li>Simulação</li>
+                    <li>Estratégia</li>
+                    <li>Esportes</li>
+                    <li>Corrida</li>
+                    <li>Tiro em primeira pessoa (FPS)</li>
+                    <li>Tiro em terceira pessoa (TPS)</li>
+                    <li>Plataforma</li>
+                    <li>Puzzle</li>
+                    <li>Jogos de Cartas e Tabuleiro</li>
+                    <li>Jogos de Luta</li>
+                    <li>Jogos de Música e Ritmo</li>
+                    <li>Jogos de Sobrevivência</li>
+                    <li>Visual Novel</li>
+                    <li>Roguelike/Roguelite</li>
+                </ol>
+            </div>
+            <div class="categoria Modos">
+                <h2>Categorias por Modos de Jogos</h2>
+                <ol>
+                    <li>Single-player</li>
+                    <li>Multiplayer</li>
+                    <li>Cooperativo (Co-op)</li>
+                    <li>Competitivo</li>
+                    <li>Offline</li>
+                    <li>Online</li>
+                    <li>MMORPG</li>
+                    <li>MOBA</li>
+                    <li>Battle Royale</li>
+                </ol>
+            </div>
+            <div class="categoria Temas">
+                <h2>Categorias por Tema e Estilo</h2>
+                <ol>
+                    <li>Indie</li>
+                    <li>Retro</li>
+                    <li>VR (Realidade Virtual)</li>
+                    <li>Pixel Art</li>
+                    <li>Jogos de terror psicológico</li>
+                    <li>Anime/Mangá</li>
+                    <li>Cyberpunk</li>
+                    <li>Espacial/Exploração Espacial</li>
+                    <li>Fantasia Medieval</li>
+                    <li>Mitologia</li>
+                    <li>Steampunk</li>
+                    <li>Cybersporte (Esportes Eletrônicos)</li>
+                    <li>Jogos de festa/multiplayer Local</li>
+                    <li>Jogos de crianças</li>
+                    <li>Jogos Educativos</li>
+                </ol>
+            </div>
+            <div class="categoria Genero">
+                <h2>Categorias por Gênero Narrativo</h2>
+                <ol>
+                    <li>Ficção Científica</li>
+                    <li>Terror</li>
+                    <li>Drama</li>
+                    <li>Fantasia</li>
+                    <li>Comédia</li>
+                    <li>Suspense</li>
+                    <li>Histórico</li>
+                    <li>Mistério</li>
+                    <li>Romance</li>
+                </ol>
+            </div>
+            <div class="categoria Plataformas">
+                <h2>Categorias por Plataforma</h2>
+                <ol>
+                    <li>PC</li>
+                    <li>Console (PlayStation, Xbox, Nintendo)</li>
+                    <li>Mobile (iOS, Android)</li>
+                    <li>VR/AR</li>
+                    <li>Jogos em Nuvem</li>
+                    <li>Cross-platform</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://store.steampowered.com/">Baixar Steam</a>
+    </footer>
 </body>
 </html>
